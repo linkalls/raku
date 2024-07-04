@@ -47,6 +47,7 @@ button {
   padding: 0.75rem 1.5rem;
   border-radius: var(--border-radius);
   cursor: pointer;
+  margin-top: 1rem;
 }
 
 button:hover {
@@ -67,54 +68,124 @@ input:focus, textarea:focus {
   outline: none;
 }
 
+header {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: var(--primary-color);
+  color: var(--foreground-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.25rem;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.features > div {
+  background-color: var(--border-color);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  width: 30%;
+  margin-bottom: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .features > div {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+pre, code {
+  background-color: #34495e;
+  overflow-x: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #34495e;
+  color: var(--foreground-color);
+}
+
 section, aside {
   background-color: var(--border-color);
   padding: var(--padding);
   border-radius: var(--border-radius);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-[alert-type] {
+div[alert-type] {
   padding: var(--padding);
   border-radius: var(--border-radius);
+  margin-bottom: var(--margin);
 }
 
-[alert-type="primary"] {
+div[alert-type="primary"] {
   background-color: var(--primary-color);
+  color: var(--foreground-color);
 }
 
-[alert-type="secondary"] {
+div[alert-type="secondary"] {
   background-color: var(--secondary-color);
 }
 
-[alert-type="error"] {
+div[alert-type="error"] {
   background-color: var(--error-color);
 }
 
-[alert-type="warning"] {
+div[alert-type="warning"] {
   background-color: var(--warning-color);
 }
 
-[alert-type="info"] {
+div[alert-type="info"] {
   background-color: var(--info-color);
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-}
-
-th, td {
-  padding: var(--padding);
-  border: 1px solid var(--border-color);
+  margin: var(--margin) 0;
 }
 
 thead {
   background-color: var(--border-color);
 }
 
+th, td {
+  padding: var(--padding);
+  border: 1px solid var(--border-color);
+  text-align: left;
+}
+
 tbody tr:nth-child(odd) {
-  background-color: var(--border-color);
+  background-color: var(--background-color);
 }
 
 tbody tr:hover {
