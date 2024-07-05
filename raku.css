@@ -141,6 +141,11 @@ header p {
 
 }
 
+p {
+  word-wrap: break-word;
+}
+
+
 section {
 
   padding: 2rem 0;
