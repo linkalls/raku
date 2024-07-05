@@ -1,0 +1,18 @@
+{
+  "name": "raku",
+  "version": "1.0.0",
+  "description": "Rakuはシンプルで直感的なクラスレスCSSフレームワークです。ダークモードを基調とし、モダンなデザインを提供します。基本的なレイアウト、タイポグラフィ、フォーム、ボタン、カード、アラートなどのUIコンポーネントをサポートします。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.23.0"
+  },
+  "dependencies": {
+    "highlight.js": "^11.9.0"
+  }
+}
