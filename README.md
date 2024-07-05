@@ -112,7 +112,7 @@ HTMLに以下のようにリンクして使用します。
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Raku - クラスレスCSSフレームワーク</title>
-  <link rel="stylesheet" href="raku.css">
+  <link rel="stylesheet" href="dist/bundle.js">
 </head>
 <body>
   <header>
@@ -160,133 +160,8 @@ HTMLに以下のようにリンクして使用します。
 </html>
 ```
 
-## CSS
 
-```css
-:root {
-  --background-color: #2c3e50;
-  --foreground-color: #ecf0f1;
-  --primary-color: #3498db;
-  --secondary-color: #2ecc71;
-  --error-color: #e74c3c;
-  --warning-color: #f39c12;
-  --info-color: #8e44ad;
-  --border-color: #34495e;
-  --padding: 1rem;
-  --margin: 1rem;
-  --border-radius: 0.5rem;
-}
 
-/* 基本リセット */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: var(--background-color);
-  color: var(--foreground-color);
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  padding: var(--padding);
-}
-
-h1, h2, h3, h4, h5, h6, p, a, button, input, textarea, table, div, section, aside, header, main {
-  margin-bottom: var(--margin);
-}
-
-a {
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-button {
-  background-color: var(--primary-color);
-  color: var(--foreground-color);
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: var(--border-radius);
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: var(--secondary-color);
-}
-
-input, textarea {
-  background-color: var(--background-color);
-  color: var(--foreground-color);
-  border: 1px solid var(--border-color);
-  padding: 0.75rem;
-  border-radius: var(--border-radius);
-  width: 100%;
-}
-
-input:focus, textarea:focus {
-  border-color: var(--primary-color);
-  outline: none;
-}
-
-section, aside {
-  background-color: var(--border-color);
-  padding: var(--padding);
-  border-radius: var(--border-radius);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-[alert-type] {
-  padding: var(--padding);
-  border-radius: var(--border-radius);
-}
-
-[alert-type="primary"] {
-  background-color: var(--primary-color);
-}
-
-[alert-type="secondary"] {
-  background-color: var(--secondary-color);
-}
-
-[alert-type="error"] {
-  background-color: var(--error-color);
-}
-
-[alert-type="warning"] {
-  background-color: var(--warning-color);
-}
-
-[alert-type="info"] {
-  background-color: var(--info-color);
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th, td {
-  padding: var(--padding);
-  border: 1px solid var(--border-color);
-}
-
-thead {
-  background-color: var
-
-(--border-color);
-}
-
-tbody tr:nth-child(odd) {
-  background-color: var(--border-color);
-}
-
-tbody tr:hover {
-  background-color: var(--secondary-color);
-  color: var(--foreground-color);
-}
+```bash
+git switch <branch-name>
 ```
-
