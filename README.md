@@ -2,10 +2,10 @@
 
 
 
-### Raku - クラスレスCSSフレームワーク 仕様書
+### Raku - ハイブリットCSSフレームワーク 仕様書
 
 #### 概要
-Rakuはシンプルで直感的なクラスレスCSSフレームワークです。ダークモードを基調とし、モダンなデザインを提供します。基本的なレイアウト、タイポグラフィ、フォーム、ボタン、カード、アラートなどのUIコンポーネントをサポートします。
+Rakuはシンプルで直感的なハイブリットCSSフレームワークです。ダークモードを基調とし、モダンなデザインを提供します。基本的なレイアウト、タイポグラフィ、フォーム、ボタン、カード、アラートなどのUIコンポーネントをサポートします。
 
 #### カラー
 - 背景色: #2c3e50
@@ -111,13 +111,13 @@ HTMLに以下のようにリンクして使用します。
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Raku - クラスレスCSSフレームワーク</title>
+  <title>Raku - ハイブリットCSSフレームワーク</title>
   <link rel="stylesheet" href="raku.css">
 </head>
 <body>
   <header>
     <h1>ようこそ</h1>
-    <p>これはRakuクラスレスCSSフレームワークの例です。</p>
+    <p>これはRakuハイブリットCSSフレームワークの例です。</p>
   </header>
   <main>
     <section>
