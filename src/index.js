@@ -10,4 +10,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
   });
 });
 
-console.log('Highlight.js has been loaded'
+console.log('Highlight.js has been loaded');  
