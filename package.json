@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "esbuild": "^0.23.0"
+    "esbuild": "^0.23.0",
+    "esbuild-plugin-inline-css": "^0.0.1"
   },
   "dependencies": {
     "highlight.js": "^11.9.0"
