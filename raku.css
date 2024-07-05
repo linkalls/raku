@@ -205,12 +205,6 @@ h3 {
 
 pre, code {
 
-  background-color: #34495e;
-
-  padding: 1rem;
-
-  border-radius: var(--border-radius);
-
   overflow: auto;
 
 }
