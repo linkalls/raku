@@ -60,12 +60,23 @@ button.primary {
 
 button.secondary {
   background-color: var(--secondary-color);
-} #4A54BF
+} 
 
+/* ボタンが無効化されている時のスタイル */
 button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
+  background-color: #34679d; /* 無効化されても色が変わらない */
+  color: white; /* 文字色も変わらない */
+  cursor: not-allowed; /* カーソルを禁止マークに */
+  pointer-events: none; /* クリックイベントを無効に */
 }
+
+/* 無効化されたボタンに対するホバー効果を無効にする */
+button:disabled:hover {
+  background-color: #007bff; /* ホバー時も背景色を変更しない */
+  color: white; /* ホバー時も文字色を変更しない */
+}
+
+
 
 input, textarea {
   background-color: var(--background-color);
@@ -153,6 +164,7 @@ nav ul {
 nav ul li {
   display: inline-block;
   margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 footer {
@@ -233,13 +245,6 @@ tbody tr:hover {
   transform: translateY(-5px);
 }
 
-.card-n { 
- background-color: var(--border-color);
-  padding: var(--padding);
-  border-radius: var(--border-radius);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease;
-}
 
 .grid {
   display: grid;
@@ -251,10 +256,18 @@ border-radius: var(--border-radius);
 padding: var(--padding);
 }
 
-.card, .grid > div, section > div {
+.card, .grid > div {
   background-color: #4A63BF; /* 少し明るい背景色 */
 }
 
+
+.card-n { 
+  background-color: var(--border-color);
+   padding: var(--padding);
+   border-radius: var(--border-radius);
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+   transition: transform 0.3s ease;
+ }
 
 blockquote {
   border-left: 4px solid var(--primary-color);
