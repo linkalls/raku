@@ -266,6 +266,7 @@ blockquote {
   padding-left: 1rem;
   margin-left: 0;
   font-style: italic;
+  margin-bottom: 1rem;
 }
 
 .form-group {
