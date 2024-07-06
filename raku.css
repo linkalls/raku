@@ -214,6 +214,19 @@ pre, code {
 
 }
 
+pre {
+      margin-bottom: 1rem;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline-block;
+      margin-right: 1rem;
+    }
+
+
 footer {
 
   text-align: center;
