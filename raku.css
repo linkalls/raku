@@ -241,7 +241,7 @@ tbody tr:hover {
   transition: transform 0.3s ease;
 }
 
-.card:hover {
+.card:hover, .card-n:hover {
   transform: translateY(-5px);
 }
 
@@ -259,16 +259,8 @@ padding: var(--padding);
  .grid > div {
   background-color: #4A63BF; /* 少し明るい背景色 */
 }
-
-
-.card-n { 
-  background-color: var(--border-color);
-   padding: var(--padding);
-   border-radius: var(--border-radius);
-   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-   transition: transform 0.3s ease;
- }
-
+ 
+  
 blockquote {
   border-left: 4px solid var(--primary-color);
   padding-left: 1rem;
