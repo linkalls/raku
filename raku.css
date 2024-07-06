@@ -240,6 +240,11 @@ tbody tr:hover {
 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.card, .grid > div, section > div {
+  background-color: #3a4a5a; /* 少し明るい背景色 */
+}
+
+
 blockquote {
   border-left: 4px solid var(--primary-color);
   padding-left: 1rem;
