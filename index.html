@@ -54,11 +54,19 @@
 
     <section id="getting-started">
       <h2>はじめ方</h2>
-      <p>Rakuを使い始めるのは簡単です。以下のCSSファイルをHTMLに追加するだけです：</p>
+      <p>Rakuを使い始めるのは簡単です。以下のCSSファイルをHTMLに追加するだけです
+        <br>(こちらのurlは本番環境ではお勧めしません。cdn経由で利用することをお勧めします。)</p>
       <pre><code class="language-html">
-&lt;link rel="stylesheet" href="https://cdn.example.com/raku.css"&gt;
+&lt;link rel="stylesheet" href="https://linkalls.github.io/raku/raku.css"&gt;
       </code></pre>
       <p>これだけで、Rakuのスタイルがあなたのウェブサイトに適用されます。</p>
+      <p>もしコードハイライトが必要な場合はこちらのコードを追加するだけです</p>
+      <pre><code class="language-html">
+        &lt;link rel="stylesheet" href="https://linkalls.github.io/raku/raku.css"&gt;
+        &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"&gt;
+        &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"&gt;&lt;/script&gt;
+        &lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+              </code></pre>
     </section>
 
     <section id="examples">
