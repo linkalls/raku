@@ -1,128 +1,126 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Raku - 使用例</title>
-  <link rel="stylesheet" href="raku.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-  <script type="module">
-    // モジュール全体を名前空間オブジェクトとしてインポートする例
-    import * as Turbo from 'https://cdn.jsdelivr.net/npm/@hotwired/turbo@7.2.0/dist/turbo.es2017-esm.js';
 
-    // Turboを使用したスクリプトをここに記述
-  </script>
-</head>
-<body>
-  <header>
-    <h1>Raku使用例</h1>
-    <p>Rakuフレームワークを使用した様々な要素とコンポーネントの例です。</p>
-  </header>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raku - 使用例</title>
+    <link rel="stylesheet" href="raku.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">ホーム</a></li>
-      <li><a href="#typography">タイポグラフィ</a></li>
-      <li><a href="#buttons">ボタン</a></li>
-      <li><a href="#forms">フォーム</a></li>
-      <li><a href="#cards">カード</a></li>
-      <li><a href="#alerts">アラート</a></li>
-      <li><a href="#tables">テーブル</a></li>
-    </ul>
-  </nav>
+  <body>
+    <header>
+      <h1>Raku使用例</h1>
+      <p>Rakuフレームワークを使用した様々な要素とコンポーネントの例です。</p>
+    </header>
 
-  <main>
-    <section id="typography">
-      <h2>タイポグラフィ</h2>
-      <h1>見出し1</h1>
-      <h2>見出し2</h2>
-      <h3>見出し3</h3>
-      <h4>見出し4</h4>
-      <h5>見出し5</h5>
-      <h6>見出し6</h6>
-      <p>これは段落テキストです。<a href="#">これはリンクです</a>。</p>
-      <blockquote>これは引用文です。</blockquote>
-    </section>
+    <nav>
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="#typography">タイポグラフィ</a></li>
+        <li><a href="#buttons">ボタン</a></li>
+        <li><a href="#forms">フォーム</a></li>
+        <li><a href="#cards">カード</a></li>
+        <li><a href="#alerts">アラート</a></li>
+        <li><a href="#tables">テーブル</a></li>
+      </ul>
+    </nav>
 
-    <section id="buttons">
-      <h2>ボタン</h2>
-      <button>デフォルトボタン</button>
-      <button class="primary">プライマリボタン</button>
-      <button class="secondary">セカンダリボタン</button>
-      <button disabled>無効化されたボタン</button>
-    </section>
+    <main>
+      <section id="typography">
+        <h2>タイポグラフィ</h2>
+        <h1>見出し1</h1>
+        <h2>見出し2</h2>
+        <h3>見出し3</h3>
+        <h4>見出し4</h4>
+        <h5>見出し5</h5>
+        <h6>見出し6</h6>
+        <p>これは段落テキストです。<a href="#">これはリンクです</a>。</p>
+        <blockquote>これは引用文です。</blockquote>
+      </section>
 
-    <section id="forms">
-      <h2>フォーム</h2>
-      <form>
-        <label for="name">名前:</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">メールアドレス:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="message">メッセージ:</label>
-        <textarea id="message" name="message" required></textarea>
-        
-        <button type="submit">送信</button>
-      </form>
-    </section>
+      <section id="buttons">
+        <h2>ボタン</h2>
+        <button>デフォルトボタン</button>
+        <button class="primary">プライマリボタン</button>
+        <button class="secondary">セカンダリボタン</button>
+        <button disabled>無効化されたボタン</button>
+      </section>
 
-    <section id="cards">
-      <h2>カード</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>カード1</h3>
-          <p>これはカードの例です。ホバー時に少し浮き上がります。</p>
-          <button>詳細</button>
+      <section id="forms">
+        <h2>フォーム</h2>
+        <form>
+          <label for="name">名前:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">メールアドレス:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">メッセージ:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">送信</button>
+        </form>
+      </section>
+
+      <section id="cards">
+        <h2>カード</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>カード1</h3>
+            <p>これはカードの例です。ホバー時に少し浮き上がります。</p>
+            <button>詳細</button>
+          </div>
+          <div class="card">
+            <h3>カード2</h3>
+            <p>別のカードの例です。コンテンツを整理するのに便利です。</p>
+            <button>詳細</button>
+          </div>
         </div>
-        <div class="card">
-          <h3>カード2</h3>
-          <p>別のカードの例です。コンテンツを整理するのに便利です。</p>
-          <button>詳細</button>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="alerts">
-      <h2>アラート</h2>
-      <div alert-type="primary">これはプライマリアラートです</div>
-      <div alert-type="secondary">これはセカンダリアラートです</div>
-      <div alert-type="error">これはエラーアラートです</div>
-      <div alert-type="warning">これは警告アラートです</div>
-      <div alert-type="info">これは情報アラートです</div>
-    </section>
+      <section id="alerts">
+        <h2>アラート</h2>
+        <div alert-type="primary">これはプライマリアラートです</div>
+        <div alert-type="secondary">これはセカンダリアラートです</div>
+        <div alert-type="error">これはエラーアラートです</div>
+        <div alert-type="warning">これは警告アラートです</div>
+        <div alert-type="info">これは情報アラートです</div>
+      </section>
 
-    <section id="tables">
-      <h2>テーブル</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>列1</th>
-            <th>列2</th>
-            <th>列3</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>行1, セル1</td>
-            <td>行1, セル2</td>
-            <td>行1, セル3</td>
-          </tr>
-          <tr>
-            <td>行2, セル1</td>
-            <td>行2, セル2</td>
-            <td>行2, セル3</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-  </main>
+      <section id="tables">
+        <h2>テーブル</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>列1</th>
+              <th>列2</th>
+              <th>列3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>行1, セル1</td>
+              <td>行1, セル2</td>
+              <td>行1, セル3</td>
+            </tr>
+            <tr>
+              <td>行2, セル1</td>
+              <td>行2, セル2</td>
+              <td>行2, セル3</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
 
-  <footer>
-    <p>&copy; 2024 Raku. All rights reserved.</p>
-  </footer>
-</body>
+    <footer>
+      <p>&copy; 2024 Raku. All rights reserved.</p>
+    </footer>
+  </body>
+
 </html>

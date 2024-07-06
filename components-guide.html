@@ -1,122 +1,120 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Raku - コンポーネントガイド</title>
-  <link rel="stylesheet" href="raku.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-<script type="module">
-    // モジュール全体を名前空間オブジェクトとしてインポートする例
-    import * as Turbo from 'https://cdn.jsdelivr.net/npm/@hotwired/turbo@7.2.0/dist/turbo.es2017-esm.js';
 
-    // Turboを使用したスクリプトをここに記述
-  </script>
-</head>
-<body>
-  <header>
-    <h1>Rakuコンポーネントガイド</h1>
-    <p>Rakuフレームワークの各コンポーネントの使い方を説明します。</p>
-  </header>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raku - コンポーネントガイド</title>
+    <link rel="stylesheet" href="raku.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">ホーム</a></li>
-      <li><a href="#buttons">ボタン</a></li>
-      <li><a href="#cards">カード</a></li>
-      <li><a href="#alerts">アラート</a></li>
-      <li><a href="#grid">グリッド</a></li>
-      <li><a href="#forms">フォーム</a></li>
-    </ul>
-  </nav>
+  <body>
+    <header>
+      <h1>Rakuコンポーネントガイド</h1>
+      <p>Rakuフレームワークの各コンポーネントの使い方を説明します。</p>
+    </header>
 
-  <main>
-    <section id="buttons">
-      <h2>ボタン</h2>
-      <p>ボタンは以下のようにシンプルに実装できます：</p>
-      <pre><code class="language-html">
-&lt;button&gt;デフォルトボタン&lt;/button&gt;
-&lt;button class="primary"&gt;プライマリボタン&lt;/button&gt;
-&lt;button class="secondary"&gt;セカンダリボタン&lt;/button&gt;
-      </code></pre>
-      <button>デフォルトボタン</button>
-      <button class="primary">プライマリボタン</button>
-      <button class="secondary">セカンダリボタン</button>
-    </section>
+    <nav>
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="#buttons">ボタン</a></li>
+        <li><a href="#cards">カード</a></li>
+        <li><a href="#alerts">アラート</a></li>
+        <li><a href="#grid">グリッド</a></li>
+        <li><a href="#forms">フォーム</a></li>
+      </ul>
+    </nav>
 
-    <section id="cards">
-      <h2>カード</h2>
-      <p>カードコンポーネントは以下のように実装できます：</p>
-      <pre><code class="language-html">
-&lt;div class="card"&gt;
-  &lt;h3&gt;カードタイトル&lt;/h3&gt;
-  &lt;p&gt;カードの内容&lt;/p&gt;
-  &lt;button&gt;詳細&lt;/button&gt;
-&lt;/div&gt;
-      </code></pre>
-      <div class="card">
-        <h3>カードタイトル</h3>
-        <p>カードの内容</p>
-        <button>詳細</button>
-      </div>
-    </section>
+    <main>
+      <section id="buttons">
+        <h2>ボタン</h2>
+        <p>ボタンは以下のようにシンプルに実装できます：</p>
+        <pre><code class="language-html">
+            &lt;button&gt;デフォルトボタン&lt;/button&gt;
+            &lt;button class="primary"&gt;プライマリボタン&lt;/button&gt;
+            &lt;button class="secondary"&gt;セカンダリボタン&lt;/button&gt;
+          </code></pre>
+        <button>デフォルトボタン</button>
+        <button class="primary">プライマリボタン</button>
+        <button class="secondary">セカンダリボタン</button>
+      </section>
 
-    <section id="alerts">
-      <h2>アラート</h2>
-      <p>アラートは以下のように実装できます：</p>
-      <pre><code class="language-html">
-&lt;div alert-type="primary"&gt;プライマリアラート&lt;/div&gt;
-&lt;div alert-type="error"&gt;エラーアラート&lt;/div&gt;
-      </code></pre>
-      <div alert-type="primary">プライマリアラート</div>
-      <div alert-type="error">エラーアラート</div>
-    </section>
+      <section id="cards">
+        <h2>カード</h2>
+        <p>カードコンポーネントは以下のように実装できます：</p>
+        <pre><code class="language-html">
+            &lt;div class="card"&gt;
+            &lt;h3&gt;カードタイトル&lt;/h3&gt;
+            &lt;p&gt;カードの内容&lt;/p&gt;
+            &lt;button&gt;詳細&lt;/button&gt;
+            &lt;/div&gt;
+          </code></pre>
+        <div class="card">
+          <h3>カードタイトル</h3>
+          <p>カードの内容</p>
+          <button>詳細</button>
+        </div>
+      </section>
 
-    <section id="grid">
-      <h2>グリッド</h2>
-      <p>グリッドレイアウトは以下のように実装できます：</p>
-      <pre><code class="language-html">
-&lt;div class="grid"&gt;
-  &lt;div&gt;グリッドアイテム1&lt;/div&gt;
-  &lt;div&gt;グリッドアイテム2&lt;/div&gt;
-  &lt;div&gt;グリッドアイテム3&lt;/div&gt;
-&lt;/div&gt;
-      </code></pre>
-      <div class="grid">
-        <div class="card">グリッドアイテム1</div>
-        <div class="card">グリッドアイテム2</div>
-        <div class="card">グリッドアイテム3</div>
-      </div>
-    </section>
+      <section id="alerts">
+        <h2>アラート</h2>
+        <p>アラートは以下のように実装できます：</p>
+        <pre><code class="language-html">
+            &lt;div alert-type="primary"&gt;プライマリアラート&lt;/div&gt;
+            &lt;div alert-type="error"&gt;エラーアラート&lt;/div&gt;
+          </code></pre>
+        <div alert-type="primary">プライマリアラート</div>
+        <div alert-type="error">エラーアラート</div>
+      </section>
 
-    <section id="forms">
-      <h2>フォーム</h2>
-      <p>フォーム要素は以下のように実装できます：</p>
-      <pre><code class="language-html">
-&lt;form&gt;
-  &lt;label for="name"&gt;名前:&lt;/label&gt;
-  &lt;input type="text" id="name" name="name" required&gt;
-  
-  &lt;label for="email"&gt;
-  &lt;input type="email" id="email" name="email" required&gt;
-  
-</code></pre>
-<form>
-  <div class="form-group">
-    <label for="name">名前:</label>
-    <input type="text" id="name" name="name" required>
-  </div>
+      <section id="grid">
+        <h2>グリッド</h2>
+        <p>グリッドレイアウトは以下のように実装できます：</p>
+        <pre><code class="language-html">
+            &lt;div class="grid"&gt;
+            &lt;div&gt;グリッドアイテム1&lt;/div&gt;
+            &lt;div&gt;グリッドアイテム2&lt;/div&gt;
+            &lt;div&gt;グリッドアイテム3&lt;/div&gt;
+            &lt;/div&gt;
+          </code></pre>
+        <div class="grid">
+          <div class="card">グリッドアイテム1</div>
+          <div class="card">グリッドアイテム2</div>
+          <div class="card">グリッドアイテム3</div>
+        </div>
+      </section>
 
-  <div class="form-group">
-    <label for="email">メールアドレス:</label>
-    <input type="email" id="email" name="email" required>
-  </div>
+      <section id="forms">
+        <h2>フォーム</h2>
+        <p>フォーム要素は以下のように実装できます：</p>
+        <pre><code class="language-html">
+            &lt;form&gt;
+            &lt;label for="name"&gt;名前:&lt;/label&gt;
+            &lt;input type="text" id="name" name="name" required&gt;
 
-  <button type="submit">送信</button>
-</form>
-</section>
-  </main>
-</body>
+            &lt;label for="email"&gt;
+            &lt;input type="email" id="email" name="email" required&gt;
+
+          </code></pre>
+        <form>
+          <div class="form-group">
+            <label for="name">名前:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">メールアドレス:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <button type="submit">送信</button>
+        </form>
+      </section>
+    </main>
+  </body>
+
 </html>
