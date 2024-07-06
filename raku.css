@@ -60,7 +60,7 @@ button.primary {
 
 button.secondary {
   background-color: var(--secondary-color);
-}
+} #4A54BF
 
 button:disabled {
   opacity: 0.5;
@@ -238,10 +238,13 @@ tbody tr:hover {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: var(--margin);
 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+background-color: var(--background-color);
+border-radius: var(--border-radius);
+padding: var(--padding);
 }
 
 .card, .grid > div, section > div {
-  background-color: #3a4a5a; /* 少し明るい背景色 */
+  background-color: #4A63BF; /* 少し明るい背景色 */
 }
 
 
