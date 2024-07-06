@@ -234,8 +234,11 @@ tbody tr:hover {
 }
 
 .card-n { 
- background-color: var(--background-color);
- box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+ background-color: var(--border-color);
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
 }
 
 .grid {
