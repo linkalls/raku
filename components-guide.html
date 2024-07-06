@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raku - コンポーネントガイド</title>
+  <link rel="stylesheet" href="raku.css">
+</head>
+<body>
+  <header>
+    <h1>Rakuコンポーネントガイド</h1>
+    <p>Rakuフレームワークの各コンポーネントの使い方を説明します。</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">ホーム</a></li>
+      <li><a href="#buttons">ボタン</a></li>
+      <li><a href="#cards">カード</a></li>
+      <li><a href="#alerts">アラート</a></li>
+      <li><a href="#grid">グリッド</a></li>
+      <li><a href="#forms">フォーム</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="buttons">
+      <h2>ボタン</h2>
+      <p>ボタンは以下のようにシンプルに実装できます：</p>
+      <pre><code class="language-html">
+&lt;button&gt;デフォルトボタン&lt;/button&gt;
+&lt;button class="primary"&gt;プライマリボタン&lt;/button&gt;
+&lt;button class="secondary"&gt;セカンダリボタン&lt;/button&gt;
+      </code></pre>
+      <button>デフォルトボタン</button>
+      <button class="primary">プライマリボタン</button>
+      <button class="secondary">セカンダリボタン</button>
+    </section>
+
+    <section id="cards">
+      <h2>カード</h2>
+      <p>カードコンポーネントは以下のように実装できます：</p>
+      <pre><code class="language-html">
+&lt;div class="card"&gt;
+  &lt;h3&gt;カードタイトル&lt;/h3&gt;
+  &lt;p&gt;カードの内容&lt;/p&gt;
+  &lt;button&gt;詳細&lt;/button&gt;
+&lt;/div&gt;
+      </code></pre>
+      <div class="card">
+        <h3>カードタイトル</h3>
+        <p>カードの内容</p>
+        <button>詳細</button>
+      </div>
+    </section>
+
+    <section id="alerts">
+      <h2>アラート</h2>
+      <p>アラートは以下のように実装できます：</p>
+      <pre><code class="language-html">
+&lt;div alert-type="primary"&gt;プライマリアラート&lt;/div&gt;
+&lt;div alert-type="error"&gt;エラーアラート&lt;/div&gt;
+      </code></pre>
+      <div alert-type="primary">プライマリアラート</div>
+      <div alert-type="error">エラーアラート</div>
+    </section>
+
+    <section id="grid">
+      <h2>グリッド</h2>
+      <p>グリッドレイアウトは以下のように実装できます：</p>
+      <pre><code class="language-html">
+&lt;div class="grid"&gt;
+  &lt;div&gt;グリッドアイテム1&lt;/div&gt;
+  &lt;div&gt;グリッドアイテム2&lt;/div&gt;
+  &lt;div&gt;グリッドアイテム3&lt;/div&gt;
+&lt;/div&gt;
+      </code></pre>
+      <div class="grid">
+        <div class="card">グリッドアイテム1</div>
+        <div class="card">グリッドアイテム2</div>
+        <div class="card">グリッドアイテム3</div>
+      </div>
+    </section>
+
+    <section id="forms">
+      <h2>フォーム</h2>
+      <p>フォーム要素は以下のように実装できます：</p>
+      <pre><code class="language-html">
+&lt;form&gt;
+  &lt;label for="name"&gt;名前:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name" required&gt;
+  
+  &lt;label for="email"&gt
