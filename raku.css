@@ -234,7 +234,7 @@ tbody tr:hover {
 }
 
 .card {
-  background-color: var(--border-color);
+  background-color: #4A63BF; /* 少し明るい背景色 */
   padding: var(--padding);
   border-radius: var(--border-radius);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
@@ -256,7 +256,7 @@ border-radius: var(--border-radius);
 padding: var(--padding);
 }
 
-.card, .grid > div {
+ .grid > div {
   background-color: #4A63BF; /* 少し明るい背景色 */
 }
 
