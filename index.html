@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="ja">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Raku - ハイブリッドCSSフレームワーク</title>
-    <link rel="stylesheet" href="raku.css">
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="raku.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+    <script type="module">
+      document.addEventListener('turbo:load', (event) => {
+        document.querySelectorAll('pre code').forEach((block) => {
+          hljs.highlightBlock(block); // この行を修正
+        });
+      });
+    </script>
   </head>
 
   <body>
@@ -30,13 +40,16 @@
     <main>
       <section id="features">
         <h2>なぜRakuなのか？</h2>
-        <p>Rakuはハイブリッドcssフレームワークであるため、classlessフレームワークとコンポーネントベースのいいとこ取りをしています。シンプルなHTMLタグと少しのクラスやroleで美しいデザインを実現できます。
+        <p>
+          Rakuはハイブリッドcssフレームワークであるため、classlessフレームワークとコンポーネントベースのいいとこ取りをしています。シンプルなHTMLタグと少しのクラスやroleで美しいデザインを実現できます。
         </p>
 
         <div class="features">
           <div class="card">
             <h3>直感的なデザイン</h3>
-            <p>クラスを使用せずに、直感的にスタイルを適用できます。また明瞭なclass名で簡単にスタイルを指定できます。</p>
+            <p>
+              クラスを使用せずに、直感的にスタイルを適用できます。また明瞭なclass名で簡単にスタイルを指定できます。
+            </p>
           </div>
           <div class="card">
             <h3>レスポンシブ</h3>
@@ -51,33 +64,33 @@
 
       <section id="getting-started">
         <h2>はじめ方</h2>
-        <p>Rakuを使い始めるのは簡単です。以下のCSSファイルをHTMLに追加するだけです
-          <br>(こちらのurlは本番環境ではお勧めしません。cdn経由で利用することをお勧めします。)
+        <p>
+          Rakuを使い始めるのは簡単です。以下のCSSファイルをHTMLに追加するだけです
         </p>
         <pre><code class="language-html">
-            &lt;link rel="stylesheet" href="https://linkalls.github.io/raku/raku.css"&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/linkalls/raku/raku.min.css"&gt;
           </code></pre>
         <p>これだけで、Rakuのスタイルがあなたのウェブサイトに適用されます。</p>
-        <p>もしコードハイライトが必要な場合はこちらのコードを追加するだけです</p>
+        <p>
+          もしコードハイライトが必要な場合はこちらのコードを追加するだけです
+        </p>
         <pre><code class="language-html">
-            &lt;link rel="stylesheet" href="https://linkalls.github.io/raku/raku.css"&gt;
-            &lt;link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"&gt;
-            &lt;script
-            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"&gt;&lt;/script&gt;
-            &lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+ &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/linkalls/raku/raku.min.css"&gt;
+ &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"&gt;
+ &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"&gt;&lt;/script&gt;
+ &lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
           </code></pre>
       </section>
 
       <section id="examples">
         <h2>使用例</h2>
-        <p>Rakuを使用したシンプルな例を見てみましょう：</p>
+        <p>Rakuを使用したシンプルな例を見てみましょう!</p>
         <pre><code class="language-html">
-            &lt;div class="card"&gt;
-            &lt;h3&gt;カードタイトル&lt;/h3&gt;
-            &lt;p&gt;これはカードの内容です。&lt;/p&gt;
-            &lt;button&gt;詳細を見る&lt;/button&gt;
-            &lt;/div&gt;
+&lt;div class="card"&gt;
+&lt;h3&gt;カードタイトル&lt;/h3&gt;
+&lt;p&gt;これはカードの内容です。&lt;/p&gt;
+&lt;button&gt;詳細を見る&lt;/button&gt;
+&lt;/div&gt;
           </code></pre>
         <div class="card">
           <h3>カードタイトル</h3>
@@ -88,11 +101,17 @@
 
       <section>
         <h2>今すぐ始めましょう！</h2>
-        <p>Rakuフレームワークを使って、あなたのウェブサイトを美しくデザインしましょう。</p>
+        <p>
+          Rakuフレームワークを使って、あなたのウェブサイトを美しくデザインしましょう。
+        </p>
 
         <div class="grid">
-          <button onclick="location.href='examples.html'">実際の使用例はこちら</button>
-          <button onclick="location.href='components-guide.html'">コンポーネントガイドを見る</button>
+          <button onclick="location.href='examples.html'">
+            実際の使用例はこちら
+          </button>
+          <button onclick="location.href='components-guide.html'">
+            コンポーネントガイドを見る
+          </button>
         </div>
       </section>
     </main>
@@ -100,6 +119,8 @@
     <footer>
       <p>&copy; 2024 Raku. All rights reserved.</p>
     </footer>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
   </body>
-
 </html>
