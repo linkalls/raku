@@ -81,6 +81,29 @@ class FShare extends HTMLElement {
 
 
 
+class ShareButton extends HTMLElement {
+  constructor() {
+    super();
+    const shadow = this.attachShadow({ mode: "open" });
+    shadow.innerHTML = `
+      <link rel="stylesheet" href="raku.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      <div class="dropdown">
+        <button class="primary">snsで共有</button>
+        <div class="dropdown-menu">
+          <div class="social-icons">
+            <x-share></x-share>
+            <f-share></f-share>
+            <th-share></th-share>
+            <normal-share></normal-share>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+}
+
+customElements.define("share-button", ShareButton);
 
 customElements.define("normal-share", NormalShare);
 customElements.define("x-share", XShare);
