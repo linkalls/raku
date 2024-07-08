@@ -53,7 +53,6 @@ class NormalShare extends HTMLElement {
         navigator.share({
           title: document.title, // 元のタイトルを使用
           text: `${document.title}\n${document.location.href}`, // タイトル、改行、URLの形式でテキストを設定
-          url: document.location.href // 元のURLを使用
         }).then(() => console.log('Successful share'))
           .catch((error) => console.log('Error sharing', error));
       }
