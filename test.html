@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>CSS Test Page</title>
+    <link rel="stylesheet" href="raku.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="sns-share.js"></script>
+  </head>
+
+  <body class="fade-in">
+
+    <header>
+      <h1>CSS Test Page</h1>
+      <p>様々なCSS要素のテスト</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2>見出し (h2)</h2>
+        <p>通常の段落テキスト。
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Nulla vitae elit libero, a pharetra augue.
+          Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+        </p>
+        <blockquote>
+          引用文の例です。他のテキストとは異なるスタイルで表示されます。
+        </blockquote>
+      </section>
+
+      <section class="features">
+        <h2>機能</h2>
+        <div>
+          <h3>機能1</h3>
+          <p>機能1の説明</p>
+        </div>
+        <div>
+          <h3>機能2</h3>
+          <p>機能2の説明</p>
+        </div>
+        <div>
+          <h3>機能3</h3>
+          <p>機能3の説明</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>フォーム</h2>
+        <div class="form-group">
+          <label for="name">名前:</label>
+          <input type="text" id="name" name="name">
+        </div>
+        <div class="form-group">
+          <label for="email">メールアドレス:</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <button type="submit" class="primary">送信</button>
+        <button type="button" class="secondary">キャンセル</button>
+        <button type="button" class="secondary" disabled>無効化されたボタン</button>
+      </section>
+
+      <section>
+        <h2>テーブル</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>項目1</th>
+              <th>項目2</th>
+              <th>項目3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>データ1</td>
+              <td>データ2</td>
+              <td>データ3</td>
+            </tr>
+            <tr>
+              <td>データ4</td>
+              <td>データ5</td>
+              <td>データ6</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>アラート</h2>
+        <div alert-type="primary">プライマリーアラート</div>
+        <div alert-type="secondary">セカンダリーアラート</div>
+        <div alert-type="error">エラーアラート</div>
+        <div alert-type="warning">警告アラート</div>
+        <div alert-type="info">情報アラート</div>
+      </section>
+
+      <section>
+        <h2>コード</h2>
+        <pre>
+          <code>
+            function greet(name) {
+            console.log("Hello, " + name + "!");
+            }
+          </code>
+        </pre>
+      </section>
+    </main>
+
+    <section>
+      <div class="dropdown">
+        <button class="primary">snsで共有</button>
+        <div class="dropdown-menu">
+          <div class="social-icons">
+            <x-share></x-share>
+            <f-share></f-share>
+            <i-share></i-share>
+            <!-- <a href="https://twitter.com/" target="_blank"><span class="fab fa-twitter" aria-hidden="true"></span></a> -->
+            <!-- <a href="https://www.facebook.com/" target="_blank"><span class="fab fa-facebook"　aria-hidden="true"></span></a> -->
+            <!-- <a href="https://www.instagram.com/" target="_blank"><span class="fab fa-instagram"　aria-hidden="true"></span></a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Your Company</p>
+    </footer>
+
+  </body>
+
+</html>

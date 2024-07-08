@@ -1,7 +1,7 @@
 :root {
   --background-color: #2c3e50;
   --foreground-color: #ecf0f1;
-  --primary-color: #3498db;
+  --primary-color: #3729ef;
   --secondary-color: #2ecc71;
   --error-color: #e74c3c;
   --warning-color: #f39c12;
@@ -90,6 +90,16 @@ input, textarea {
 input:focus, textarea:focus {
   border-color: var(--primary-color);
   outline: none;
+}
+
+input.is-invalid,
+textarea.is-invalid {
+  border-color: var(--error-color);
+}
+
+.error-message {
+  color: var(--error-color);
+  font-size: 0.8rem;
 }
 
 header {
@@ -271,6 +281,55 @@ tbody tr:hover {
   transform: translateY(-5px);
 }
 
+.card:hover {
+  background-color: #3b539e;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* 親要素の下端から表示 */
+  left: 0; /* 親要素の左端に合わせる */
+  background-color: var(--background-color);
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  display: inline-block;
+  padding: 0.5rem;
+  color: var(--foreground-color);
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.social-icons a:hover {
+  color: var(--secondary-color);
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--primary-color);
+}
 
 .grid {
   display: grid;
