@@ -174,7 +174,7 @@ nav ul li {
   text-align: center; /* テキストを中央揃え */
   transition: all 0.3s ease; /* アニメーションの設定 */
   background-color: var(--border-color);
-  padding: 1rem;
+  padding: 0.8rem;
   border-radius: var(--border-radius);
   margin-bottom: 1rem;
 }
@@ -184,6 +184,13 @@ nav ul li:hover {
   transform: scale(1.1); /* ホバー時の拡大 */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* ホバー時の影 */
 }
+
+nav ul li a { /* aタグにスタイルを適用 */
+  display: block; /* ブロック要素として表示 */
+  width: 100%;   /* 幅を100%にする */
+  height: 100%;  /* 高さを100%にする */
+}
+
 
 
 footer {
