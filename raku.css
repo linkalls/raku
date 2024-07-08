@@ -78,6 +78,7 @@ button:disabled:hover {
 
 
 
+
 input, textarea {
   background-color: var(--background-color);
   color: var(--foreground-color);
@@ -199,6 +200,7 @@ nav ul li a { /* aタグにスタイルを適用 */
   display: block; /* ブロック要素として表示 */
   width: 100%;   /* 幅を100%にする */
   height: 100%;  /* 高さを100%にする */
+  color: var(--foreground-color);
 }
 
 
@@ -310,6 +312,14 @@ tbody tr:hover {
 
 .social-icons {
   display: flex;
+  justify-content: center; /* アイコンを中央に配置します */
+  align-items: center; /* アイコンを垂直方向の中央に配置します */
+}
+
+.social-icons img {
+  max-width: 100%; /* 親要素の幅を超えないようにします */
+  max-height: 100%; /* 親要素の高さを超えないようにします */
+  height: auto; /* 画像のアスペクト比を保持します */
 }
 
 .social-icons a {

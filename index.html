@@ -21,6 +21,9 @@
         });
       });
     </script>
+   <script src="sns-share.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
   </head>
 
   <body>
@@ -35,6 +38,7 @@
         <li><a href="#getting-started">はじめ方</a></li>
         <li><a href="#examples">使用例</a></li>
         <li><a href="components-guide.html">コンポーネントガイド</a></li>
+        <li><a href="test.html">snsで共有など</a></li>
       </ul>
     </nav>
 
@@ -116,6 +120,19 @@
         </div>
       </section>
     </main>
+    <section>
+      <div class="dropdown">
+        <button class="primary">snsで共有</button>
+        <div class="dropdown-menu">
+          <div class="social-icons">
+            <x-share></x-share>
+            <f-share></f-share>
+            <th-share></th-share>
+            <normal-share></normal-share>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer>
       <p>&copy; 2024 Raku. All rights reserved.</p>
