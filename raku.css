@@ -161,11 +161,30 @@ nav ul {
   padding: 0;
 }
 
+/* 既存のスタイル */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: grid; /* Gridレイアウトを使用 */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* 項目の最小幅と自動調整 */
+  gap: 1rem; /* 項目間の余白 */
+}
+
 nav ul li {
-  display: inline-block;
-  margin-right: 1rem;
+  text-align: center; /* テキストを中央揃え */
+  transition: all 0.3s ease; /* アニメーションの設定 */
+  background-color: var(--border-color);
+  padding: 1rem;
+  border-radius: var(--border-radius);
   margin-bottom: 1rem;
 }
+
+nav ul li:hover {
+  background-color: var(--secondary-color); /* ホバー時の背景色 */
+  transform: scale(1.1); /* ホバー時の拡大 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* ホバー時の影 */
+}
+
 
 footer {
   text-align: center;
@@ -259,8 +278,8 @@ padding: var(--padding);
  .grid > div {
   background-color: #4A63BF; /* 少し明るい背景色 */
 }
- 
-  
+
+
 blockquote {
   border-left: 4px solid var(--primary-color);
   padding-left: 1rem;
