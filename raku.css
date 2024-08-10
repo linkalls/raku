@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea, table, div, section, asid
 }
 
 a {
-  color: var(--primary-color);
+  color: #ff7518;
   text-decoration: none;
 }
 
@@ -334,7 +334,7 @@ tbody tr:hover {
   color: var(--secondary-color);
 }
 
-a:focus,
+
 button:focus,
 input:focus,
 textarea:focus {
